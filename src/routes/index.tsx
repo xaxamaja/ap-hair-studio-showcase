@@ -4,14 +4,14 @@ import { BOOKSY_URL, PHONE, PHONE_DISPLAY, ADDRESS, HOURS, INSTAGRAM, FACEBOOK }
 import { createFileRoute } from "@tanstack/react-router";
 import { Calendar, Instagram, Facebook, Phone, MapPin, Clock, Scissors, Palette, Sparkles, Wind, Leaf, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import heroImg from "@/assets/hero.jpg";
-import aboutImg from "@/assets/about.jpg";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
+import heroImg from "@/assets/hero.jpeg";
+import aboutImg from "@/assets/about.jpeg";
+import g1 from "@/assets/g1.jpeg";
+import g2 from "@/assets/g2.jpeg";
+import g3 from "@/assets/g3.jpeg";
+import g4 from "@/assets/g4.jpeg";
+import g5 from "@/assets/g5.jpeg";
+import g6 from "@/assets/g6.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -96,7 +96,7 @@ const services = [
 
 const testimonials = [
   { name: "Magdalena K.", text: "Najlepszy salon w Wrocławiu. Profesjonalizm, atmosfera i efekt — wszystko na najwyższym poziomie. Wychodzę zawsze zachwycona.", rating: 5 },
-  { name: "Anna W.", text: "Pani Ania zrobiła mi balayage marzeń. Włosy zdrowe, kolor naturalny, a obsługa absolutnie premium. Polecam każdej kobiecie.", rating: 5 },
+  { name: "Anna W.", text: "Pani Agnieszka zrobiła mi balayage marzeń. Włosy zdrowe, kolor naturalny, a obsługa absolutnie premium. Polecam każdej kobiecie.", rating: 5 },
   { name: "Piotr M.", text: "W końcu znalazłem miejsce, gdzie strzyżenie męskie traktowane jest poważnie. Precyzja, dbałość o detal, świetny klimat.", rating: 5 },
   { name: "Karolina S.", text: "Wnętrze salonu zachwyca, ale to ludzie tworzą tę markę. Indywidualne podejście i fenomenalne doradztwo.", rating: 5 },
   { name: "Justyna B.", text: "Robię tu koloryzację od dwóch lat. Włosy są w idealnej kondycji, a kolor zawsze trafiony. Pełen profesjonalizm.", rating: 5 },
@@ -159,7 +159,7 @@ function Index() {
             <div className="relative">
               <img src={aboutImg} alt="Wnętrze salonu" className="w-full h-[600px] object-cover" loading="lazy" />
               <div className="absolute -bottom-6 -right-6 bg-gold text-primary p-8 hidden md:block">
-                <p className="font-display text-5xl">10+</p>
+                <p className="font-display text-5xl">5+</p>
                 <p className="eyebrow mt-1">lat doświadczenia</p>
               </div>
             </div>
@@ -178,7 +178,7 @@ function Index() {
             </p>
             <div className="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-border">
               {[
-                { n: "5K+", l: "Klientek i klientów" },
+                { n: "1000+", l: "Klientek i klientów" },
                 { n: "100%", l: "Premium kosmetyki" },
                 { n: "5.0", l: "Średnia ocen" },
               ].map((s) => (
